@@ -3,9 +3,17 @@
   "version": "0.0.1",
   "description": "",
   "main": "index.js",
+  "engines": {
+    "node": "22"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "login": "firebase login",
+    "deploy": "firebase deploy --only functions:itemWritten,functions:supplierWritten,functions:locationWritten,functions:purchaseOrderWritten,functions:userWritten"
   },
   "author": "TJ Monserrat",
-  "license": "Apache-2.0"
+  "license": "Apache-2.0",
+  "devDependencies": {
+    "firebase-tools": "^13.29.2"
+  }
 }
