@@ -9,7 +9,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "login": "firebase login",
-    "deploy": "firebase deploy --only functions:itemWritten,functions:supplierWritten,functions:locationWritten,functions:purchaseOrderWritten,functions:userWritten"
+    "deploy": "firebase deploy --only functions:itemWritten,functions:supplierWritten,functions:locationWritten,functions:purchaseOrderWritten,functions:userWritten,functions:rmaWritten,functions:saleWritten"
   },
   "author": "TJ Monserrat",
   "license": "Apache-2.0",

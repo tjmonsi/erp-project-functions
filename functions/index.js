@@ -84,3 +84,13 @@ exports.userWritten = onDocumentWritten({
   document: "users/{id}",
   region: "asia-southeast1",
 }, async (event) => writeToIndex("users", event));
+
+exports.rmaWritten = onDocumentWritten({
+  document: "rmas/{id}",
+  region: "asia-southeast1",
+}, async (event) => writeToIndex("rmas", event));
+
+exports.saleWritten = onDocumentWritten({
+  document: "sales/{id}",
+  region: "asia-southeast1",
+}, async (event) => writeToIndex("sales", event));
